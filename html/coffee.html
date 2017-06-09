@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>SmmCoffee</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="navigation-desktop navigation-fixed">
+			<div class="container clear">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/logo.png" alt="logo" width="43" height="39"></a>
+				</div>
+				<div class="menu-desktop clear">
+					<ul>
+						<li><a href="about-company.html">Company</a></li>
+						<li><a href="coffee.html">Coffee</a></li>
+						<li><a href="partnership.html">Partnership</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="account-block">
+					<a href="#" class="account">
+						<span>Account</span>
+					</a>
+					<a href="#" class="log-in logout" id="login">
+						<span class="log-in-text">Log in</span>
+						<img src="../img/log-in-logo.png" alt="log-in-logo" width="17" height="17" class="log-in-logo">
+					</a>
+				</div>
+			</div>
+			<div class="register-modal" id="login-modal">
+			<div class="container clear">
+				<div class="left-part-modal">
+					<p class="modal-heading">Please log in to use account tools:</p>
+					<form action="#" class="modal-form">
+						<input type="email" placeholder="E-mail"  maxlength="40" class="modal-email">
+						<input type="password" placeholder="Password"  maxlength="40" class="modal-password">
+						<button id="btn-login">Login</button>
+					</form>
+					<div class="reminder" id="forgot-password"><a href="#" >forgot password?</a></div>
+				</div>
+				<div class="right-part-modal">
+					<p class="modal-heading">I don't have account</p>
+					<button class="register">Register</button>
+					<span class="close" id="close-login"><i class="fa fa-times" aria-hidden="true"></i></span>
+				</div>
+			</div>	
+		</div>
+		<div class="register-modal" id="send-modal">
+			<div class="container clear">
+				<div class="left-part-modal">
+					<p class="modal-heading">To get new password please send your registered e-mail.</p>
+					<form action="#" class="modal-form">
+						<input type="email" placeholder="E-mail" maxlength="40" class="modal-email send-email">
+						<button class="send-button">Get new password</button>
+					</form>
+					<div class="reminder" id="back-login"><a href="#">back to Log in</a></div>
+				</div>
+				<div class="right-part-modal">
+					<p class="modal-heading">I don't have account</p>
+					<button class="register">Register</button>
+					<span class="close" id="close-send"><i class="fa fa-times" aria-hidden="true"></i></span>
+				</div>
+			</div>	
+		</div>
+		<div class="register-modal logout-modal-class" id="logout-modal">
+			<div class="container clear">
+				<p class="modal-heading">Do you realy want to log out?</p>
+				<button class="logout-btn yes" id="btn-yes">Yes</button>
+				<button class="logout-btn" id="btn-no">No</button>
+			</div>	
+		</div>
+		<div class="shadow-wrapper"></div>	
+		</div>
+		<div class="header header-coffee">
+			<div class="header-box-shadow">
+				<h1>Coffee</h1>
+			</div>
+		</div>
+		<div class="container clear">
+			<div class="coffee-aside">
+				<div class="filter">
+					<span>filter brand</span>
+				</div>
+				<div class="grey brand">
+					<form action="#">
+						<p><input type="radio" id="lavazza" checked="checked" name="brand" value="lavazza"><label for="lavazza">Lavazza</label></p>
+						<p><input type="radio" id="kimbo" name="brand" value="kimbo"><label for="kimbo">Kimbo</label></p>
+						<p><input type="radio" id="gimoka" name="brand" value="gimoka"><label for="gimoka">Gimoka</label></p>
+						<p><input type="radio" id="eilles" name="brand" value="eilles"><label for="eilles">Eilles</label></p>
+						<p><input type="radio" id="dallmayr" name="brand" value="dallmayr"><label for="dallmayr">Dallmayr</label></p>
+						<p><input type="radio" id="movenpick" name="brand" value="movenpick"><label for="movenpick">Movenpick</label></p>
+					</form>
+				</div>
+				<div class="filter">
+					<span>filter type</span>
+				</div>
+				<div class="grey type">
+					<form action="#">
+						<p><input type="checkbox" id="ground" checked="checked" name="type[]" value="ground"><label for="ground">ground coffee</label></p>
+						<p><input type="checkbox" id="beans" name="type[]" value="beans"><label for="beans">coffee beans</label></p>
+					</form>
+				</div>
+				<div class="box grey">
+					<p class="block-info"><span class="info"><span></span></span><span class="block-info-text">box/pallet price</span></p>
+					<div class="toggle-down toggle-down2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum assumenda ratione sunt voluptate. Omnis itaque, laudantium doloribus porro neque eligendi, aut atque blanditiis inventore. Minima tenetur placeat corrupti sint esse!
+					</div>
+					<a href="#" class="link-more link2"><span class="arrow-down"></a></a>
+				</div>
+			</div>
+			<div class="coffee-main">
+				<div class="coffee-row clear">
+					<div class="coffee-item">
+						<p class="item-heading">
+							<span class="item-head">Lavazza Cremae <br>Aroma Espresso Blue<br>beans 1 kg</span>
+						</p>
+						<div class="item-img">
+							<div class="item-img-cell"><img src="../img/lavazza-rossa.jpg" alt="lavazza" width="82" height="153"></div>
+						</div>
+						<div class="price-block1 clear">
+							<p class="price">Box price</p>
+							<p class="price-quantity">1,86 &euro;</p>
+						</div>
+						<div class="price-block2 clear">
+							<p class="price">Pallet price</p>
+							<p class="price-quantity">1,43 &euro;</p>
+						</div>
+					</div>
+					<div class="coffee-item">
+						<p class="item-heading">
+							<span class="item-head">Lavazza Qualita<br>	 
+								Rossa Beans 1kg</span>
+							</p>
+							<div class="item-img">
+								<div class="item-img-cell">
+									<img src="../img/lavazza.png" alt="lavazza" width="98" height="156">
+								</div>
+							</div>
+							<div class="price-block1 clear">
+								<p class="price">Box price</p>
+								<p class="price-quantity">1,86 &euro;</p>
+							</div>
+							<div class="price-block2 clear">
+								<p class="price">Pallet price</p>
+								<p class="price-quantity">1,43 &euro;</p>
+							</div>
+						</div>
+						<div class="coffee-item">
+							<p class="item-heading">
+								<span class="item-head">
+									Kimbo beans<br> 
+									premium 1kg</span>
+							</p>
+							<div class="item-img">
+								<div class="item-img-cell">
+									<img src="../img/kimbo.png" alt="lavazza" width="66" height="149">
+								</div>
+							</div>
+							<div class="price-block1 clear">
+								<p class="price">Box price</p>
+								<p class="price-quantity">1,86 &euro;</p>
+							</div>
+							<div class="price-block2 clear">
+								<p class="price">Pallet price</p>
+								<p class="price-quantity">1,43 &euro;</p>
+							</div>
+						</div>
+						<div class="coffee-item">
+							<p class="item-heading">
+								<span class="item-head">Lavazza Cremae <br>Aroma Espresso Blue<br>beans 1 kg</span>
+							</p>
+						<div class="item-img">
+						<div class="item-img-cell">
+							<img src="../img/lavazza-rossa.jpg" alt="lavazza"width="82" height="153"></div>
+						</div>
+						<div class="price-block1 clear">
+							<p class="price">Box price</p>
+							<p class="price-quantity">1,86 &euro;</p>
+						</div>
+						<div class="price-block2 clear">
+							<p class="price">Pallet price</p>
+							<p class="price-quantity">1,43 &euro;</p>
+						</div>
+					</div>
+				</div>
+				<div class="coffee-row clear">
+					<div class="coffee-item">
+						<p class="item-heading">
+							<span class="item-head">Lavazza Qualita<br>	 
+							Rossa Beans 1kg</span>
+						</p>
+						<div class="item-img">
+							<div class="item-img-cell">
+								<img src="../img/lavazza.png" alt="lavazza" width="98" height="156">
+							</div>
+						</div>
+						<div class="price-block1 clear">
+							<p class="price">Box price</p>
+							<p class="price-quantity">1,86 &euro;</p>
+						</div>
+						<div class="price-block2 clear">
+							<p class="price">Pallet price</p>
+							<p class="price-quantity">1,43 &euro;</p>
+						</div>
+					</div>
+					<div class="coffee-item">
+						<p class="item-heading">
+							<span class="item-head">
+								Kimbo beans<br> 
+								premium 1kg</span>
+							</p>
+							<div class="item-img">
+								<div class="item-img-cell">
+									<img src="../img/kimbo.png" alt="lavazza" width="66" height="149">
+								</div>
+							</div>
+							<div class="price-block1 clear">
+								<p class="price">Box price</p>
+								<p class="price-quantity">1,86 &euro;</p>
+							</div>
+							<div class="price-block2 clear">
+								<p class="price">Pallet price</p>
+								<p class="price-quantity">1,43 &euro;</p>
+							</div>
+						</div>
+						<div class="coffee-item">
+							<p class="item-heading">
+								<span class="item-head">Lavazza Cremae <br>Aroma Espresso Blue<br>beans 1 kg</span>
+							</p>
+							<div class="item-img">
+								<div class="item-img-cell"><img src="../img/lavazza-rossa.jpg" alt="lavazza" width="82" height="153"></div>
+							</div>
+							<div class="price-block1 clear">
+								<p class="price">Box price</p>
+								<p class="price-quantity">1,86 &euro;</p>
+							</div>
+							<div class="price-block2 clear">
+								<p class="price">Pallet price</p>
+								<p class="price-quantity">1,43 &euro;</p>
+							</div>
+						</div>
+						<div class="coffee-item">
+							<p class="item-heading">
+								<span class="item-head">Lavazza Qualita<br>	 
+								Rossa Beans 1kg</span>
+							</p>
+						<div class="item-img">
+							<div class="item-img-cell">
+								<img src="../img/lavazza.png" alt="lavazza" width="98" height="156">
+							</div>
+						</div>
+						<div class="price-block1 clear">
+							<p class="price">Box price</p>
+							<p class="price-quantity">1,86 &euro;</p>
+						</div>
+						<div class="price-block2 clear">
+							<p class="price">Pallet price</p>
+							<p class="price-quantity">1,43 &euro;</p>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<p>
+						<span class="brackets"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+						<span>1</span>
+						<span class="active-pagination">2</span>
+						<span>3</span>
+						<span>...</span>
+						<span class="end-pagination">4</span>
+						<span class="brackets"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="coffee-middle-part grey container">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut persp...</p>
+			<div class="toggle-down1 toggle-down">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eligendi ratione quam commodi expedita deserunt temporibus explicabo repudiandae ipsam, distinctio quia voluptatibus omnis vel nihil sequi illum nobis perspiciatis deleniti.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, veniam provident dolorem molestias, at consequatur. Aut cum nulla vitae. Quis consequatur officiis nostrum saepe totam repellat rem error sit autem.</p>
+			</div>
+			<a href="#" class="link-more link1">more <span class="arrow-down"></span></a>
+		</div>
+		<div class="clear block-news-links container">
+			<p class="last-news"><a href="news-coffee.html">Last news</a></p>
+			<p class="back-to-news"><a href="news.html">back to all news</a>&nbsp;&#8250;</p>
+		</div>
+		<div class="container clear">
+			<div class="coffee-news-block">
+				<div class="block-news">
+					<div class="bn-img2">
+						<img src="../img/cup-coffee.jpg" alt="image" width="325" height="120" class="img-responsive">
+						<span class="news-date news-date-absolute">12.03.15</span>
+					</div>
+					<div>
+						<a href="news-coffee.html">Italian Best New Coffee of 2015 Wonderful Event.</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+					<div class="news-socials">
+						<a href="#" class="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+						<a href="#" class="heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						<span>2</span>
+						<a href="#" class="reply"><i class="fa fa-reply" aria-hidden="true"></i></a>
+						<div class="socials-block">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<p class="tags tags2">Tags: <a href="#">logistic,</a>&nbsp;<a href="#">wholesale,</a>&nbsp;<a href="#">beans,</a>&nbsp;<a href="news-coffee.html" class="tag-active">coffe</a>&nbsp;...</p>
+				</div>
+			</div>
+			<div class="coffee-news-block">
+				<div class="block-news">
+					<div class="bn-img2">
+						<img src="../img/cup-coffee.jpg" alt="image" width="325" height="120" class="img-responsive">
+						<span class="news-date news-date-absolute">12.03.15</span>
+					</div>
+					<div>
+						<a href="news-coffee.html">Italian Best New Coffee of 2015 Wonderful Event.</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+					<div class="news-socials">
+						<a href="#" class="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+						<a href="#" class="heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						<span>2</span>
+						<a href="#" class="reply"><i class="fa fa-reply" aria-hidden="true"></i></a>
+						<div class="socials-block">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<p class="tags tags2">Tags: <a href="#">logistic,</a>&nbsp;<a href="#">wholesale,</a>&nbsp;<a href="#">beans,</a>&nbsp;<a href="news-coffee.html" class="tag-active">coffe</a>&nbsp;...</p>
+				</div>
+			</div>
+			<div class="coffee-news-block">
+				<div class="block-news">
+					<div class="bn-img2">
+						<img src="../img/cup-coffee.jpg" alt="image" width="325" height="120" class="img-responsive">
+						<span class="news-date news-date-absolute">12.03.15</span>
+					</div>
+					<div>
+						<a href="news-coffee.html">Italian Best New Coffee of 2015 Wonderful Event.</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+					</div>
+					<div class="news-socials">
+						<a href="#" class="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+						<a href="#" class="heart"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						<span>2</span>
+						<a href="#" class="reply"><i class="fa fa-reply" aria-hidden="true"></i></a>
+						<div class="socials-block">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<p class="tags tags2">Tags: <a href="#">logistic,</a>&nbsp;<a href="#">wholesale,</a>&nbsp;<a href="#">beans,</a>&nbsp;<a href="news-coffee.html" class="tag-active">coffe</a>&nbsp;...</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<span>&copy; 2016 all right reserved</span>
+					<a href="../index.html"><img src="../img/mini-logo.png" alt="mini logo" width="37" height="33" class="logo-mini"></a>
+					<span>SMM. Wholesale coffee</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</body>
+</html>

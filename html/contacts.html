@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	<title>SmmCoffee</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="navigation-desktop navigation-fixed">
+			<div class="container clear">
+				<div class="logo">
+					<a href="../index.html"><img src="../img/logo.png" alt="logo" width="43" height="39"></a>
+				</div>
+				<div class="menu-desktop clear">
+					<ul>
+						<li><a href="about-company.html">Company</a></li>
+						<li><a href="coffee.html">Coffee</a></li>
+						<li><a href="partnership.html">Partnership</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="account-block">
+					<a href="#" class="account">
+						<span>Account</span>
+					</a>
+					<a href="#" class="log-in logout" id="login">
+						<span class="log-in-text">Log in</span>
+						<img src="../img/log-in-logo.png" alt="log-in-logo" width="17" height="17" class="log-in-logo">
+					</a>
+				</div>
+			</div>
+			<div class="register-modal" id="login-modal">
+			<div class="container clear">
+				<div class="left-part-modal">
+					<p class="modal-heading">Please log in to use account tools:</p>
+					<form action="#" class="modal-form">
+						<input type="email" placeholder="E-mail"  maxlength="40" class="modal-email">
+						<input type="password" placeholder="Password"  maxlength="40" class="modal-password">
+						<button id="btn-login">Login</button>
+					</form>
+					<div class="reminder" id="forgot-password"><a href="#" >forgot password?</a></div>
+				</div>
+				<div class="right-part-modal">
+					<p class="modal-heading">I don't have account</p>
+					<button class="register">Register</button>
+					<span class="close" id="close-login"><i class="fa fa-times" aria-hidden="true"></i></span>
+				</div>
+			</div>	
+		</div>
+		<div class="register-modal" id="send-modal">
+			<div class="container clear">
+				<div class="left-part-modal">
+					<p class="modal-heading">To get new password please send your registered e-mail.</p>
+					<form action="#" class="modal-form">
+						<input type="email" placeholder="E-mail" maxlength="40" class="modal-email send-email">
+						<button class="send-button">Get new password</button>
+					</form>
+					<div class="reminder" id="back-login"><a href="#">back to Log in</a></div>
+				</div>
+				<div class="right-part-modal">
+					<p class="modal-heading">I don't have account</p>
+					<button class="register">Register</button>
+					<span class="close" id="close-send"><i class="fa fa-times" aria-hidden="true"></i></span>
+				</div>
+			</div>	
+		</div>
+		<div class="register-modal logout-modal-class" id="logout-modal">
+			<div class="container clear">
+				<p class="modal-heading">Do you realy want to log out?</p>
+				<button class="logout-btn yes" id="btn-yes">Yes</button>
+				<button class="logout-btn" id="btn-no">No</button>
+			</div>	
+		</div>
+		<div class="shadow-wrapper"></div>	
+		</div>
+		<div class="header header-contacts">
+			<div class="header-box-shadow">
+				<h1>Contacts</h1>
+			</div>
+		</div>
+		<div class="main-contacts">
+			<div class="container">
+				<h4 class="contacts-first-block">You've got questions</h4>
+				<h4 class="contacts-second-block">we've got answers</h4>
+				<div class="contact-forms clear">
+					<div class="form-about">
+						<form action="#">
+							<div class="input-field">
+			          <input id="last_name" type="text" maxlength="40">
+			          <label for="last_name">Your name \ company</label>
+	        		</div>
+	        		<div class="input-field">
+			          <input id="email" type="email" maxlength="40">
+			          <label for="email">Your E-mail</label>
+	        		</div>
+	        		<div class="input-field">
+			          <textarea id="textarea1" class="materialize-textarea" maxlength="150"></textarea>
+	          		<label for="textarea1">Your message</label>
+	          		<div class="counter"><span class="counter-current-number">0</span>&nbsp;&#47;&nbsp;<span>150</span></div>
+	        		</div>
+	        		<div class="input-field input-capcha">
+	        			<div class="capcha"><span class="capcha-number"></span><span class="capcha-reload"></span></div>
+	        			<input id="number" type="text" maxlength="6">
+			          <label for="number">Image Verification</label>
+	        		</div>
+	        		<button class="forms-button contacts-button"><span class="button-text">Send message</span><span class="arrow"></span></button>
+        		</form>
+					</div>
+					<div class="right-form">
+						<p class="right-form-heading heading-part1"><span>smm</span><span class="right-form-logo"></span></p>
+						<p class="right-form-heading heading-part2">import-export<br>wholesale coffee</p>
+						<p class="rigth-form-content">MILANO (MI) VIA LIPARI 9, 20144</p>
+						<p class="rigth-form-content">VAT-number: 08089650967</p>
+						<p class="rigth-form-content">+39 320 636 03 24 - English speaking manager</p>
+						<p class="rigth-form-content">+39 333 654 10 20 - Italian speaking manager</p>
+						<p class="rigth-form-content">INFO@SMMITALIA.IT</p>
+						<p class="rigth-form-content">SMM.SRL (skype ID)</p>
+						<p class="rigth-form-content"><a href="#" class="socials google"></a><a href="#" class="socials linkEdin"></a><a href="#" class="socials facebook"></a></p>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<span>&copy; 2016 all right reserved</span>
+					<a href="../index.html"><img src="../img/mini-logo.png" alt="mini logo" width="37" height="33" class="logo-mini"></a>
+					<span>SMM. Wholesale coffee</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <script type="text/javascript" src="../js/capcha.js"></script>
+</body>
+</html>
